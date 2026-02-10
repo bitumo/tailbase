@@ -1,0 +1,20 @@
+# Source files
+src/
+test/
+scripts/
+
+# Configuration files
+.editorconfig
+tsconfig.json
+CLAUDE.md
+
+# Build artifacts
+*.tsbuildinfo
+
+# Development files
+.claude/
+.DS_Store
+
+# Git
+.git/
+.gitignore

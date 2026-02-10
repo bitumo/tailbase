@@ -1,0 +1,65 @@
+{
+  "name": "@bitumo/luno",
+  "version": "0.1.0",
+  "description": "A utility-first UI component library built on Tailwind CSS. Provides semantic, reusable classes like .btn, .card, and .badge that expand into well-defined utility patterns - keeping your markup clean while staying 100% Tailwind-native.",
+  "keywords": [
+    "tailwindcss",
+    "tailwind",
+    "plugin",
+    "css",
+    "components",
+    "ui",
+    "design-system",
+    "utility-first",
+    "semantic-css",
+    "tailwind-components",
+    "ui-library",
+    "button",
+    "card",
+    "badge"
+  ],
+  "license": "MIT",
+  "author": "Bitumo",
+  "homepage": "https://github.com/bitumo/luno#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitumo/luno.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bitumo/luno/issues"
+  },
+  "type": "module",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "style": "./index.css",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "index.css"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "bun scripts/build.ts",
+    "test": "bun test/e2e-mjs.mjs && bun test/e2e-cjs.cjs",
+    "prepublishOnly": "bun run build"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^4"
+  },
+  "dependencies": {
+    "tailwindcss": "^4.1.18"
+  }
+}
